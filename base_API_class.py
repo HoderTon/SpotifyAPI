@@ -61,4 +61,4 @@ class SpotifyAPI(object):
 client = SpotifyAPI(client_id, client_secret)
 
 client.perform_auth()
-token = client.access_token
+access_token = client.access_token
