@@ -22,6 +22,6 @@ if valid_request:
     now = datetime.datetime.now()
     access_token = req.json().get('access_token')
     expires_in = req.json().get('expires_in')
-    expire = now + datetime.timedelta(seconds=expires_in)
-    did_expire = expire < now
+    expires = now + datetime.timedelta(seconds=expires_in)
+    did_expire = expires < now
     print(expires_in)
